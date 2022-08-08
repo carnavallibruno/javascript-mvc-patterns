@@ -4,6 +4,8 @@ var campos = [
   document.querySelector('#valor'),
 ];
 
+console.log(campos);
+
 var tbody = document.querySelector('table tbody');
 
 document.querySelector('.form').addEventListener('submit', function(event) {
@@ -22,8 +24,9 @@ document.querySelector('.form').addEventListener('submit', function(event) {
   tdVolume.textContent = campos[1].value * campos[2].value;
 
   tr.appendChild(tdVolume);
+  
   tbody.appendChild(tr);
-
+  
   campor[0].value = '';
   campor[1].value = 1;
   campos[2].value = 0;
